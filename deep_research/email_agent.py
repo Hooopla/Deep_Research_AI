@@ -22,7 +22,7 @@ def send_email(subject: str, html_body: str) -> Dict[str, str]:
     return "success"
 
 email_agent = Agent(
-  name= "Email Agent",
+  name= "EmailAgent",
   instructions= INSTRUCTIONS,
   tools=[send_email],
   model="gpt-4o-mini",
