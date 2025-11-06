@@ -18,8 +18,8 @@ class WebSearchPlan(BaseModel):
   """A list of web searches to perform to best anwer the query. """
 
 planner_agent = Agent(
-  name="PlannerAgent"
-  instructions=INSTRUCTIONS
-  model="gpt-4o-mini"
-  output_type =WebSearchPlan
+  name="PlannerAgent",
+  instructions=INSTRUCTIONS,
+  model="gpt-4o-mini",
+  output_type =WebSearchPlan,
 )
